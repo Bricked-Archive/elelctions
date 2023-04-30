@@ -1,17 +1,17 @@
 {
-  "name": "@bricked/bot-template",
+  "name": "@bricked/lelvotingsystemyoushouldtrust",
   "private": false,
-  "description": "A template for Discord.JS bots.",
+  "description": "this is a very cool system made by bricked which is very safe and secure and uncheatable pls trust it",
   "keywords": [
-    "bot-template"
+    "lelvotingsystemyoushouldtrust"
   ],
-  "homepage": "https://github.com/brycked/bot-template#readme",
+  "homepage": "https://github.com/brycked/lelvotingsystemyoushouldtrust#readme",
   "bugs": {
-    "url": "https://github.com/brycked/bot-template/issues"
+    "url": "https://github.com/brycked/lelvotingsystemyoushouldtrust/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brycked/bot-template.git"
+    "url": "git+https://github.com/brycked/lelvotingsystemyoushouldtrust.git"
   },
   "license": "MIT",
   "author": "Bricked",
@@ -42,7 +42,6 @@
     "extends": "@bricked"
   },
   "release": {
-    "dryRun": true,
     "extends": "@bricked/semantic-release-config"
   },
   "dependencies": {
