@@ -1,6 +1,6 @@
 # Lelvotingsystemyoushouldtrust
 
-[![Lelvotingsystemyoushouldtrust#0728](https://dcbadge.vercel.app/api/shield/1101553853633146940?bot=true&style=flat&theme=clean-inverted)](https://ptb.discord.com/api/oauth2/authorize?client_id=1101553853633146940&permissions=0&scope=applications.commands)
+[![Lelvotingsystemyoushouldtrust#0728](https://dcbadge.vercel.app/api/shield/1101553853633146940?bot=true&style=flat&theme=clean-inverted)](https://discord.com/user/1101553853633146940)
 [![license](https://custom-icon-badges.demolab.com/github/license/brycked/lelvotingsystemyoushouldtrust?logo=law)](LICENSE.md)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 [![version](https://img.shields.io/github/v/release/brycked/lelvotingsystemyoushouldtrust?color=crimson&logo=github&label=release)](https://github.com/brycked/lelvotingsystemyoushouldtrust/releases/latest)
