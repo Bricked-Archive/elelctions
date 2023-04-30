@@ -1,0 +1,15 @@
+# modules
+node_modules/
+
+# build
+src/
+pack/
+tsconfig.tsbuildinfo
+
+# config
+.github/
+.vscode/
+.husky/
+.*ignore
+.*rc.*
+tsconfig.json

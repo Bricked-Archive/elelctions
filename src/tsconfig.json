@@ -1,0 +1,7 @@
+{
+  "extends": ["../tsconfig.json", "@bricked/ts-config/decorators"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "../dist"
+  }
+}
