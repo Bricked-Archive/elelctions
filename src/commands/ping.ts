@@ -15,10 +15,7 @@ export class UserCommand extends Command {
   }
 
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
-    const embed = new EmbedBuilder()
-      .setColor(inter.client.color)
-      .setTitle("Ping")
-      .setDescription("*Pong!* 🏓");
-    return inter.reply({ embeds: [embed] });
+    const embed = new EmbedBuilder().setColor(inter.client.color).setDescription("*Pong!* 🏓");
+    return inter.reply({ embeds: [embed], ephemeral: true });
   }
 }
