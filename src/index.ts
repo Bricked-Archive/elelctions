@@ -7,6 +7,7 @@ const client = new Client({
   partials: [], // insert partial events
 
   color: "Blurple", // insert an accent color
+  typing: true,
 });
 
 client.login(process.env.TOKEN);
