@@ -33,7 +33,7 @@ export class UserCommand extends Command {
 
     if (!(await Candidate.exists({ guildId, election, candidateId: candidate.id }))) {
       const embed = new EmbedBuilder()
-        .setDescription(`${candidate} doesn't participate!`)
+        .setDescription(`${candidate} doesn't participate as **${election}**!`)
         .setColor(Colors.Red);
       return inter.reply({ embeds: [embed], ephemeral: true });
     }
