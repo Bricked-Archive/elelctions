@@ -40,12 +40,12 @@ export class UserCommand extends Command {
 
     await Vote.deleteMany({
       guildId,
-      election: inter.guildId,
+      election,
       voterId: inter.user.id,
     });
     await Vote.create({
       guildId,
-      election: inter.guildId,
+      election,
       candidateId: candidate.id,
       voterId: inter.user.id,
     });
