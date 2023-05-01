@@ -1,9 +1,15 @@
-## [1.2.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.0...v1.2.1) (2023-05-01)
+# [1.3.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.1...v1.3.0) (2023-05-01)
 
+
+### Features
+
+* **results:** add command to show results of election ([a742c43](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/a742c434b41aabd0de0593bcca6cdffcf2206cd0))
+
+## [1.2.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.0...v1.2.1) (2023-05-01)
 
 ### Bug Fixes
 
-* **vote:** register `electionId` field ([0e3b20d](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/0e3b20d195bfe2f5a31c67dac6eb464c25d42fb9))
+- **vote:** register `electionId` field ([0e3b20d](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/0e3b20d195bfe2f5a31c67dac6eb464c25d42fb9))
 
 # [1.2.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.1...v1.2.0) (2023-05-01)
 
