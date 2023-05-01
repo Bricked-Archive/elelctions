@@ -40,7 +40,7 @@ export class UserCommand extends Command {
       .join("\n");
 
     const embed = new EmbedBuilder()
-      .setTitle(`Results for ${election}`)
+      .setTitle(`Votes for ${election}`)
       .setDescription(description || "There aren't any votes yet!")
       .setColor(description ? inter.client.color : Colors.Red);
     await inter.reply({ embeds: [embed], ephemeral: true });
