@@ -1,6 +1,10 @@
 import { Document, Model, Schema, model, models } from "mongoose";
 
 export const vote = new Schema<VoteDocument, VoteModel>({
+  electionId: {
+    type: String,
+    required: true,
+  },
   candidateId: {
     type: String,
     required: true,
