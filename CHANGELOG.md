@@ -1,9 +1,20 @@
-## [1.1.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.0...v1.1.1) (2023-05-01)
+# [1.2.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.1...v1.2.0) (2023-05-01)
 
 
 ### Bug Fixes
 
-* **client:** automatically appear typing ([d88c771](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/d88c7712dc59e768ec2553926781802a23cde694))
+* **vote:** check if candidate participates ([7108b4f](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/7108b4f2371239550ebf37f34b4fd3e275761457))
+
+
+### Features
+
+* **vote:** add command to vote candidate ([fa02808](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/fa02808d65533b4a70e6f43091e1a899cdd3a982))
+
+## [1.1.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.0...v1.1.1) (2023-05-01)
+
+### Bug Fixes
+
+- **client:** automatically appear typing ([d88c771](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/d88c7712dc59e768ec2553926781802a23cde694))
 
 # [1.1.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.0.0...v1.1.0) (2023-05-01)
 
