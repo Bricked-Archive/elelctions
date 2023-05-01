@@ -30,7 +30,7 @@ export class UserCommand extends Command {
     const candidates = await Candidate.find({ guildId, election }, { candidateId: 1 });
     const rawVotes = candidates.map(
       async ({ candidateId }) =>
-        [candidateId, await Vote.count({ electionId: inter.guildId, candidateId })] as const
+        [candidateId, await Vote.count({ guildId, election, candidateId })] as const
     );
     const votes = new Collection<string, number>(await Promise.all(rawVotes));
     const sorted = votes.sort((first, second) => second - first);
