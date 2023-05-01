@@ -1,9 +1,15 @@
-# [1.3.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.1...v1.3.0) (2023-05-01)
+# [1.4.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.3.0...v1.4.0) (2023-05-01)
 
 
 ### Features
 
-* **results:** add command to show results of election ([a742c43](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/a742c434b41aabd0de0593bcca6cdffcf2206cd0))
+* **election:** add different elections per guild ([8278fb6](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/8278fb64287b2a6967480661a877519a3b1b2392))
+
+# [1.3.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.1...v1.3.0) (2023-05-01)
+
+### Features
+
+- **results:** add command to show results of election ([a742c43](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/a742c434b41aabd0de0593bcca6cdffcf2206cd0))
 
 ## [1.2.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.0...v1.2.1) (2023-05-01)
 
