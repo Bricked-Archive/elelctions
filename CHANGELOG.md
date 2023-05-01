@@ -1,14 +1,19 @@
-# [1.2.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.1...v1.2.0) (2023-05-01)
+## [1.2.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.2.0...v1.2.1) (2023-05-01)
 
 
 ### Bug Fixes
 
-* **vote:** check if candidate participates ([7108b4f](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/7108b4f2371239550ebf37f34b4fd3e275761457))
+* **vote:** register `electionId` field ([0e3b20d](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/0e3b20d195bfe2f5a31c67dac6eb464c25d42fb9))
 
+# [1.2.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.1...v1.2.0) (2023-05-01)
+
+### Bug Fixes
+
+- **vote:** check if candidate participates ([7108b4f](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/7108b4f2371239550ebf37f34b4fd3e275761457))
 
 ### Features
 
-* **vote:** add command to vote candidate ([fa02808](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/fa02808d65533b4a70e6f43091e1a899cdd3a982))
+- **vote:** add command to vote candidate ([fa02808](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/fa02808d65533b4a70e6f43091e1a899cdd3a982))
 
 ## [1.1.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.0...v1.1.1) (2023-05-01)
 
