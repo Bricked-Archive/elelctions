@@ -1,11 +1,11 @@
 import { Schema, model, models } from "mongoose";
 
-export const candidate = new Schema({
+export const candidate = new Schema<ICandidate>({
   electionId: {
     type: String,
     required: true,
   },
-  userId: {
+  candidateId: {
     type: String,
     required: true,
   },
@@ -16,5 +16,5 @@ export const Candidate = model<ICandidate>("Candidate", models.Candidate ? undef
 
 export interface ICandidate {
   electionId: string;
-  userId: string;
+  candidateId: string;
 }

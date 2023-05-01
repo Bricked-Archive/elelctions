@@ -26,7 +26,7 @@ export class UserCommand extends Command {
 
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
     const candidate = inter.options.getUser("candidate");
-    await Candidate.create({ electionId: inter.guildId, userId: candidate?.id });
+    await Candidate.create({ electionId: inter.guildId, candidateId: candidate?.id });
 
     const embed = new EmbedBuilder()
       .setDescription(`${candidate} has successfully been nominated!`)

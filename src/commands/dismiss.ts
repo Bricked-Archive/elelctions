@@ -28,7 +28,7 @@ export class UserCommand extends Command {
     const candidate = inter.options.getUser("candidate");
     await Candidate.deleteOne({
       electionId: inter.guildId,
-      userId: candidate?.id,
+      candidateId: candidate?.id,
     });
 
     const embed = new EmbedBuilder()
