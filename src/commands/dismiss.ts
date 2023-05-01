@@ -15,6 +15,12 @@ export class UserCommand extends Command {
       builder //
         .setName(this.name)
         .setDescription(this.description)
+        .addStringOption((builder) =>
+          builder
+            .setName("election")
+            .setDescription("The selection to dismiss from.")
+            .setRequired(true)
+        )
         .addUserOption((builder) =>
           builder.setName("candidate").setDescription("Candidate to dismiss").setRequired(true)
         )
@@ -25,14 +31,14 @@ export class UserCommand extends Command {
   }
 
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
+    const { guildId } = inter;
+    const election = inter.options.getString("election");
     const candidate = inter.options.getUser("candidate");
-    await Candidate.deleteOne({
-      electionId: inter.guildId,
-      candidateId: candidate?.id,
-    });
+
+    await Candidate.deleteOne({ guildId, election, candidateId: candidate?.id });
 
     const embed = new EmbedBuilder()
-      .setDescription(`${candidate} has successfully been dismissed!`)
+      .setDescription(`${candidate} has successfully been dismissed from **${election}**!`)
       .setColor(Colors.Green);
     return inter.reply({ embeds: [embed], ephemeral: true });
   }

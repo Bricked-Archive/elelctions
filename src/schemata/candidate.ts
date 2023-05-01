@@ -1,7 +1,11 @@
 import { Document, Model, Schema, model, models } from "mongoose";
 
 export const candidate = new Schema<CandidateDocument>({
-  electionId: {
+  guildId: {
+    type: String,
+    required: true,
+  },
+  election: {
     type: String,
     required: true,
   },
@@ -12,7 +16,8 @@ export const candidate = new Schema<CandidateDocument>({
 });
 
 export interface Candidate {
-  electionId: string;
+  guildId: string;
+  election: string;
   candidateId: string;
 }
 

@@ -13,6 +13,13 @@ export class UserCommand extends Command {
       builder //
         .setName(this.name)
         .setDescription(this.description)
+        .addStringOption((builder) =>
+          builder
+            .setName("election")
+            .setDescription("The selection to nominate for.")
+            .setRequired(true)
+            .setAutocomplete(true)
+        )
         .addUserOption((builder) =>
           builder.setName("candidate").setDescription("Candidate to vote for").setRequired(true)
         )
@@ -20,9 +27,11 @@ export class UserCommand extends Command {
   }
 
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
+    const { guildId } = inter;
+    const election = inter.options.getString("election");
     const candidate = inter.options.getUser("candidate")!;
 
-    if (!(await Candidate.exists({ electionId: inter.guildId, candidateId: candidate.id }))) {
+    if (!(await Candidate.exists({ guildId, election, candidateId: candidate.id }))) {
       const embed = new EmbedBuilder()
         .setDescription(`${candidate} doesn't participate!`)
         .setColor(Colors.Red);
@@ -40,7 +49,7 @@ export class UserCommand extends Command {
     });
 
     const embed = new EmbedBuilder()
-      .setDescription(`Successfully voted for ${candidate}!`)
+      .setDescription(`Successfully voted for ${candidate} as **${election}**!`)
       .setColor(Colors.Green);
     return inter.reply({ embeds: [embed], ephemeral: true });
   }

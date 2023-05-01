@@ -13,11 +13,20 @@ export class UserCommand extends Command {
       builder //
         .setName(this.name)
         .setDescription(this.description)
+        .addStringOption((builder) =>
+          builder
+            .setName("election")
+            .setDescription("The selection to nominate for.")
+            .setRequired(true)
+        )
     );
   }
 
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
-    const candidates = await Candidate.find({ electionId: inter.guildId }, { candidateId: 1 });
+    const { guildId } = inter;
+    const election = inter.options.getString("election");
+
+    const candidates = await Candidate.find({ guildId, election }, { candidateId: 1 });
     const rawVotes = candidates.map(
       async ({ candidateId }) =>
         [candidateId, await Vote.count({ electionId: inter.guildId, candidateId })] as const
@@ -30,7 +39,7 @@ export class UserCommand extends Command {
       .join("\n");
 
     const embed = new EmbedBuilder()
-      .setTitle("Results")
+      .setTitle(`Results for ${election}`)
       .setDescription(description || "There aren't any votes yet!")
       .setColor(description ? inter.client.color : Colors.Red);
     await inter.reply({ embeds: [embed], ephemeral: true });
