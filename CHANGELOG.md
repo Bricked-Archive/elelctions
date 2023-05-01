@@ -1,9 +1,15 @@
-## [1.5.2](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.5.1...v1.5.2) (2023-05-01)
+## [1.5.3](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.5.2...v1.5.3) (2023-05-01)
 
 
 ### Bug Fixes
 
-* **vote:** use provided election id ([03d6623](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/03d6623874efc0ac41e36e716b6023a2c1dab653))
+* **results:** change title from results to votes ([063644f](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/063644f324c4c0c4958427d36fd2410af5702571))
+
+## [1.5.2](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.5.1...v1.5.2) (2023-05-01)
+
+### Bug Fixes
+
+- **vote:** use provided election id ([03d6623](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/03d6623874efc0ac41e36e716b6023a2c1dab653))
 
 ## [1.5.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.5.0...v1.5.1) (2023-05-01)
 
