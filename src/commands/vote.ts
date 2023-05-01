@@ -17,8 +17,8 @@ export class UserCommand extends Command {
           builder
             .setName("election")
             .setDescription("The selection to nominate for.")
-            .setRequired(true)
             .setAutocomplete(true)
+            .setRequired(true)
         )
         .addUserOption((builder) =>
           builder.setName("candidate").setDescription("Candidate to vote for").setRequired(true)

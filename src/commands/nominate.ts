@@ -19,6 +19,7 @@ export class UserCommand extends Command {
           builder
             .setName("election")
             .setDescription("The selection to nominate for.")
+            .setAutocomplete(true)
             .setRequired(true)
         )
         .addUserOption((builder) =>
