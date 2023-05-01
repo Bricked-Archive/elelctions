@@ -1,9 +1,15 @@
-# [1.1.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.0.0...v1.1.0) (2023-05-01)
+## [1.1.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.1.0...v1.1.1) (2023-05-01)
 
+
+### Bug Fixes
+
+* **client:** automatically appear typing ([d88c771](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/d88c7712dc59e768ec2553926781802a23cde694))
+
+# [1.1.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.0.0...v1.1.0) (2023-05-01)
 
 ### Features
 
-* **dismiss:** add command to dismiss candidates ([2995a83](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/2995a8373a091e567ded4c665d52f115e5d46dd0))
+- **dismiss:** add command to dismiss candidates ([2995a83](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/2995a8373a091e567ded4c665d52f115e5d46dd0))
 
 # 1.0.0 (2023-05-01)
 
