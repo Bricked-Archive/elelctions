@@ -22,6 +22,13 @@ export class UserCommand extends Command {
   public override async chatInputRun(inter: Command.ChatInputCommandInteraction) {
     const candidate = inter.options.getUser("candidate")!;
 
+    if (!(await Candidate.exists({ electionId: inter.guildId, candidateId: candidate.id }))) {
+      const embed = new EmbedBuilder()
+        .setDescription(`${candidate} doesn't participate!`)
+        .setColor(Colors.Red);
+      return inter.reply({ embeds: [embed], ephemeral: true });
+    }
+
     await Vote.deleteMany({
       electionId: inter.guildId,
       voterId: inter.user.id,
