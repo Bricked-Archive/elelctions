@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 export const candidate = new Schema({
   electionId: {
@@ -11,4 +11,10 @@ export const candidate = new Schema({
   },
 });
 
-export const Candidate = model("Candidate", candidate);
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+export const Candidate = model<ICandidate>("Candidate", models.Candidate ? undefined : candidate);
+
+export interface ICandidate {
+  electionId: string;
+  userId: string;
+}
