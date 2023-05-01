@@ -3,7 +3,7 @@ import { ApplyOptions } from "@sapphire/decorators";
 import { Command } from "@sapphire/framework";
 import { Colors } from "discord.js";
 import { PermissionsBitField } from "discord.js";
-import { Candidate } from "../schemata/candidate";
+import Candidate from "../schemata/candidate";
 
 @ApplyOptions<Command.Options>({
   description: "Nominate a candidate for the current election.",
