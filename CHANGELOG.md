@@ -1,9 +1,16 @@
-# [1.5.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.4.0...v1.5.0) (2023-05-01)
+## [1.5.1](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.5.0...v1.5.1) (2023-05-01)
 
+
+### Bug Fixes
+
+* **vote:** include `guildId` in vote ([13712d9](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/13712d906104c717e6219e10054b104a846da6d8))
+* **vote:** show election of nonexistent participant ([7f20110](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/7f20110e27a35cf629318211905f668450370de6))
+
+# [1.5.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.4.0...v1.5.0) (2023-05-01)
 
 ### Features
 
-* **election:** add autocomplete for election ([bf574e3](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/bf574e387fce7fde068609c9e1fa11f922a839b1))
+- **election:** add autocomplete for election ([bf574e3](https://github.com/brycked/lelvotingsystemyoushouldtrust/commit/bf574e387fce7fde068609c9e1fa11f922a839b1))
 
 # [1.4.0](https://github.com/brycked/lelvotingsystemyoushouldtrust/compare/v1.3.0...v1.4.0) (2023-05-01)
 
