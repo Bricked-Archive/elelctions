@@ -74,7 +74,7 @@
   },
   "optionalDependencies": {
     "@sapphire/cli": "^1.6.1",
-    "mongoose": "^7.1.1"
+    "mongoose": "^7.2.0"
   },
   "publishConfig": {
     "access": "public"
