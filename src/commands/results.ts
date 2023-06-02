@@ -34,9 +34,13 @@ export class UserCommand extends Command {
     );
     const votes = new Collection<string, number>(await Promise.all(rawVotes));
     const sorted = votes.sort((first, second) => second - first);
+    const total = votes.reduce((acc, val) => acc + val, 0);
 
     const description = sorted
-      .map((count, candidate) => `${userMention(candidate)}: **${count}**`)
+      .map(
+        (count, candidate) =>
+          `${userMention(candidate)}: **${count}** (${Math.round((count / total) * 100)}%)`
+      )
       .join("\n");
 
     const embed = new EmbedBuilder()
