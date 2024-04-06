@@ -7,7 +7,12 @@
 
 this is a very cool system made by bricked which is very safe and secure and uncheatable pls trust it
 
+> [!Warning]
+> This project has been archived, as the Elelctions successfully took place and the bot is no longer needed.
+
 ## Usage
+
+You don't.
 
 ## Building
 
